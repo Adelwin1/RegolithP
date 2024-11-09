@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register Page</title>
+    <link rel="stylesheet" href="/register.css"/>
+</head>
+
+<body>
+    <div id="header">
+        <h1><bold class="unique">p</bold><bold class="bold">roject<bold class="unique">1</bold><bold class="unique">g</bold><bold class="unique">1</bold>pedi</bold><bold class="unique">a</bold></h1>
+        <p>the best encyclopedia</p>
+    </div>
+    <div id="main">
+       <h2 class="register-title">Register</h2>
+       <button class="back-btn">&leftarrow;Back</button>
+        <form>
+            <div id="credentials">
+                <label for="username" class="username">Full name</label>
+                <input name="username" id="username" class="username" type="text" placeholder="Full name" required/>
+            </div>
+            <div id="credentials">
+                <label for="email" class="email">Email address</label>
+                <input name="email" id="email" class="email" type="text" placeholder="Email address" required/>
+            </div>
+            <div id="credentials">
+                <label for="birth" class="birth">Date of Birth</label>
+                <input name="birth" id="birth" class="birth" type="date" required/>
+            </div>
+            <div id="credentials">
+                <label for="password" class="password">Password</label>
+                <input name="password" id="password" class="username" type="password" placeholder="Password" required/>
+            </div>
+            <div id="credentials">
+                <label for="confirmPassword" class="confirmPassword">confirm password</label>
+                <input name="confirmPassword" id="confirmPassword" class="confirmPassword" type="password" placeholder="Confirm password" required/>
+            </div>
+            <div class="sign">
+                <button class="btnRegister">Register</button>
+                <a target="_self" href="/login.html">Cancel</a>
+            </div>
+        </form>
+        <a href="/entry.html" target="_self">Return to the website</a>
+    </div>
+    <script src="/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+*{
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    position: relative;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+  }
+  
+  #header>h1{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-transform: uppercase;
+  }
+  
+  .unique{
+      font-size: 40px;
+      font-family: 'Times New Roman';
+      font-style: italic;
+      color: #12164a;
+  }
+  .bold{
+      font-size: 25px;
+      font-family: 'Times New Roman';
+      color: rgb(14, 40, 157);
+      
+  }
+  
+  #header>p{
+      text-transform: capitalize;
+  }
+
+  #main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    padding-bottom: 2rem;
+  }
+
+  .register-title{
+    height: 50%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+  .back-btn{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(76, 69, 69);
+    color: white;
+    font-size: 25px;
+    border: 0px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    cursor: pointer
+  }
+
+  form{
+    padding: 20px 10px 0px 10px;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #credentials{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 4rem;
+    position: relative;
+    padding: 0;
+  }
+
+  #credentials>label{
+    min-height: 1rem;
+    font-size: 15px;
+  }
+  #credentials>input{
+    min-height: 2rem;
+    margin-top: 5px;
+    border: 1px solid rgb(72, 64, 64);
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .sign{
+    height: 4rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sign>button{
+    height: 70%;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .btnRegister:hover{
+    color: rgb(14, 40, 157);
+    border: 2px solid rgb(14, 40, 157);
+    cursor: pointer;
+  }
+
+  .sign>a{
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+  }
+  .sign>a:hover{
+    text-decoration: underline;
+  }
+
+  #main>:last-child{
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+    place-self: flex-end;
+    text-decoration: none;
+  }
+
+  #main>:last-child:hover{
+    text-decoration: underline;
+  }
+
+
+

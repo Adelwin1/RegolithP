@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+#section-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+#header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 4.5rem;
+
+}
+
+#header>h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.unique{
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    color: #12164a;
+}
+.bold{
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    color: rgb(14, 40, 157);
+}
+
+#header>p{
+    text-transform: capitalize;
+}
+
+#grid-layout{
+    display: grid;
+    grid-template-columns: repeat(11, minmax(3.1rem, auto));
+    grid-template-rows: repeat(5, minmax(4rem, auto));
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+}
+
+.wiki-logo{
+    grid-row: 2 / span 3;
+    grid-column: 4 / span 4;
+    min-width: 3.1rem;
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wiki-logo>img{
+    width: 100%;
+    height: 100%;
+}
+
+.lang{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one, .six{
+    grid-row: 1 / span 1;
+}
+
+.two, .seven{
+    grid-row: 2 / span 1;
+}
+
+.three, .eight{
+    grid-row: 3 / span 1;
+}
+
+.four, .nine{
+    grid-row: 4 / span 1;
+}
+
+.five, .ten{
+    grid-row: 5 / span 1;
+}
+
+.one{
+    grid-column: 3 / span 2;
+}
+.two{
+    grid-column: 2 / span 2;
+}
+.three{
+    grid-column: 1 / span 3;
+}
+.four{
+    grid-column: 2 / span 2;
+}
+.five{
+    grid-column: 3 / span 2;
+}
+.six{
+    grid-column: 7 / span 2;
+}
+.seven{
+    grid-column: 8 / span 2;
+}
+.eight{
+    grid-column: 8 / span 3;
+}
+.nine{
+    grid-column: 8 / span 2;
+}
+.ten{
+    grid-column: 7 / span 2;
+}
+
+
+.lang>.link-anchor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.link-anchor:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.link-anchor:hover > :first-child,
+.link-anchor:focus > :first-child{
+    text-decoration: underline;
+}
+
+.link-anchor>strong{
+    color: blue;
+    text-transform: capitalize;
+    opacity: 0.6;
+}
+
+.link-anchor>small{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#aLink{
+ margin-right: 4.5rem;
+}
+#aLink>a{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ gap: 5px;
+ cursor: pointer;
+ border-radius: 50px;
+ background-color: #12164a;
+ color: white;
+
+ transition-duration: 1s;
+ transition-timing-function: linear ease-out;
+}
+
+#aLink>a:hover{
+ border-radius: 0px;
+}
+
+
+#aLink>a:hover > :nth-child(2),
+#aLink>a:focus > :nth-child(2){
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+footer{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+footer>hr{
+    width: 100%;
+    height: 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright>strong{
+    margin-left: 5px;
+    font-size: 12px;
+    align-self:last baseline;
+}
+.copyright-anchor{
+    margin: 0 10px;
+    cursor: pointer;
+    color: blue;
+}
+.copyright-anchor:hover{
+    text-decoration: underline;
+}
+
+.github-link{
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+    transition-duration: 1s;
+    transition-timing-function: linear ease-in;
+}
+.github-link:hover{
+  text-decoration: underline;
+}
+
+
+
+
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <main>
+        <div class="form_logo">
+         <img width="50px" height="50px" src="/images/login-svg.svg"/>
+        </div>
+      <section class="login_section">
+        
+        <h3 class="login_title">login now</h3>
+        <form id="form">
+          <div id="grid-form">
+            <label for="email" class="email">email</label>
+            <input
+              class="email"
+              type="text"
+              placeholder="Enter your email"
+              required
+            />
+            <div id="passForgot">
+              <label for="password" class="password">password </label>
+              <a class="passForgot" href="#">forgot password?</a>
+            </div>
+  
+            <input
+              class="password"
+              type="password"
+              placeholder="Enter your password"
+              required
+            />
+            <div class="remember-check">
+              <input type="checkbox" class="btnCheck" />
+              <label class="btnLabel">Remember me </label>
+            </div>
+            <button type="submit" class="login_button">login</button>
+          </div>
+          <footer>
+            <div id="sign_title">
+              <hr class="hrLeft" />
+              <p>or sign up using</p>
+              <hr class="hrRight"/>
+            </div>
+            <div id="providers">
+              <ul id="providers-list">
+                 <li>
+                  <a href="https://google.com" target="_blank">
+                    <img
+                    src="/images/google-svg.svg"
+                    alt="google logo"
+                    />
+                  </a>
+                 </li>
+                 <li>
+                  <a href="https://facebook.com" target="_blank">
+                    <img
+                    src="/images/facebook-svg.svg"
+                    alt="facebook logo"
+                    />
+                  </a>
+                 </li>
+                 <li>
+                  <a href="https://x.com" target="_blank">
+                    <img
+                    src="/images/twitter-x.svg"
+                    alt="x logo"
+                    />
+                  </a>
+                 </li>
+              </ul>
+            </div>
+            <div id="signup">
+            <p>Doesn't have an account yet?</p>
+            <a href="/register.html">sign up</a>
+            </div>
+         </footer>
+        </form>
+      </section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>

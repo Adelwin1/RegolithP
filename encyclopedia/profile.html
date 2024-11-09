@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <title>Personal Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .container-image{
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    input,
+    textarea{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container-image">
+      <img src="/images/profile-svg.svg" alt="profile logo" width="100" height="100"/>
+    </div>
+    <h1>Personal Profile</h1>
+    <p>Here you can find information about me!</p>
+
+    <div>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" value="John Doe" readonly>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" value="johndoe@example.com" readonly>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" value="About Me" readonly>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" readonly>I'm an enthusiastic individual passionate about web development!</textarea>
+    </div>
+  </div>
+</body>
+</html>
